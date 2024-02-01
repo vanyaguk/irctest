@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
     display: block;
     font-family: 'Roboto', sans-serif;
+    
 }
 body {
     height: 100%;
@@ -172,8 +173,8 @@ transition: 0.5s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 16vw;
-    height: 20vw;
+    width: 300px;
+    height: 380px;
     border: #000000 solid 2px;
     border-radius: 40px;
     margin: 10px;
@@ -183,6 +184,7 @@ transition: 0.5s;
 }
 .newhere h1 {
     font-size: 45px;
+    text-align: center;
 }
 .newhere a {
     display: inline-block;
@@ -212,8 +214,8 @@ font-size: larger;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 16vw;
-    height: 20vw;
+    width: 300px;
+    height: 380px;
     border: #000000 solid 2px;
     border-radius: 40px;
     margin: 10px;
@@ -277,7 +279,7 @@ font-size: larger;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(10, 10, 10, 0.99);
+    background-color: rgba(10, 10, 10, 0.95);
     height: 500px;
     color: white;
     font-size: 24px;
@@ -381,8 +383,8 @@ to {  -moz-transform:rotate(360deg);}
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 21vw;
-    height: 27vw;
+    width: 400px;
+    height: 550px;
     border: #000000 solid 2px;
     border-radius: 40px;
     background-color: rgb(10, 10, 10);
@@ -445,7 +447,6 @@ to {  -moz-transform:rotate(360deg);}
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1000px;
     padding: 70px;
     transition: all 0.5s;
 }
@@ -638,4 +639,178 @@ margin-top: 50px;
 }
 .givebox:hover {
     transform: scale(1.025);
+}
+
+@media only screen and (max-width: 768px) {
+    .header a {
+        display: none;
+    }
+    .innerfirst {
+        text-align: center;
+    }
+    .innerfirst h1 {
+        font-size: 32px;
+    }
+    .innerfirst h2 {
+        font-size: 21px;
+    }
+    .firstcont iframe {
+        transform: scale(3);
+        filter: blur(2px);
+    }
+    .locations {
+        flex-direction: column;
+    }
+    .newhere {
+        height: 190px;
+    }
+    .thirdcont h1 {
+        font-size: 32px;
+    }
+    .thirdcont p {
+        font-size: 16px;
+    }
+    .thirdcont::after {
+        width: 200%;
+    }
+    .fourthcont {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .card {
+        width: 100%;
+        justify-self: center;
+    }
+    .swiper-pagination {
+        text-align: center !important;
+    }
+    .latest {
+        margin-bottom: 18px;
+    }
+    .fivecont {
+        padding: 20px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    .fivecont h1 {
+        line-height: 0.7;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .fivecont h2 {
+        text-align: center;
+        align-self: center;
+    }
+    .fiveinner {
+        flex-direction: column-reverse;
+    }
+    #imgconnect {
+        width: 400px;
+        z-index: -1;
+        margin-top: 20px;        
+    }
+    .groupone, .grouptwo {
+       width: 80%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .groupone p, .grouptwo p {
+       display: none;
+    }
+    .groupone a, .grouptwo a {
+        font-size: 26px;
+     }
+     .sixcont {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+     }
+     .sixinner {
+        text-align: center;
+        padding: 20px;
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 40px;
+     }
+     .sixinner p {
+        width: 90%;
+        font-size: 16px;
+    }
+    .sixinner span {
+        display: none;
+    }
+    #pastorpht {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    .sixcont h1 {
+        font-size: 42px;
+    }
+    .sevencont {
+        height: 500px;
+    }
+    .givebox {
+        width: 80%;
+        padding: 40px;
+        
+    }
+    .footer {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .givebox h2 {
+        font-size: 21px;
+    }
+    .links, .footer p {
+        display: none;
+    }
+    .soclinks {
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .firstcont iframe {
+        transform: scale(2.5);
+        filter: blur(3px);
+    }
+    .newhere, .campusone, .campustwo {
+        width: 230px;
+    }
+    .newhere h1 {
+        font-size: 36px;
+    }
+    .campusone a, .campustwo a {
+        display: none;
+    }
+    .thirdcont::after {
+        width: 180%;
+    }
+    .fourthcont {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .card {
+        justify-self: center;
+    }
+    .swiper-pagination {
+        text-align: center !important;
+    }
+    .latest {
+        margin-bottom: 18px;
+    }
+}	
+@media only screen and (min-width: 1280px) {
+    
+}	
+@media only screen and (min-width: 1536px) {
+    
 }
