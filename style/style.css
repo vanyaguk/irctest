@@ -153,11 +153,8 @@ transition: width 0.5s ease 0s, left 0.5s ease 0s;
     justify-content: flex-end;
     width: 100%;
     height: 88vh;
-    position: relative;
-    z-index: 1;
     padding-bottom: 100px;
     cursor: default;
-
 }
 .innerfirst a {
     display: inline-block;
@@ -820,7 +817,6 @@ padding-bottom: 50px;
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
-
 /*
  * Make this absolute positioned
  * at the top left of the screen
@@ -1264,6 +1260,27 @@ form {
 /* MEDIA CHANGES */
 
 @media only screen and (max-width: 768px) {
+    /* IPHONE DONT SHOW IFRAM YOUTBE AUTOPLAY */
+    .firstcont iframe {
+        display: none;
+    }
+    .firstcont {
+        position: relative;
+    }
+    .firstcont::before {
+        content: "";
+        background-image: url("../media/mqdefault_6s.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        z-index: -1;
+    }
     .header a {
         display: none;
     }
