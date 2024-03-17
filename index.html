@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>International Restoration Church</title>
+<title>International Restoration Church | Bellevue & Everett, Washington | Evgeny Peresvetov</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta property=”og:title” content="">
+<meta property=”og:description” content="Burn in church, not in hell">
+<meta property=”og:type” content="">
+<meta property=”og:image” content="../media/irc_usa.png">
+<meta property=”og:url” content="">
+<meta property=”og:site_name” content="IRC USA">
 <link rel="stylesheet" href="style\style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,43 +17,92 @@
 <link rel="icon" type="image/x-icon" href="media/favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<style>
-</style>
-<script src="js\script.js"></script>
+
+<script src="js\script.js" defer></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
 
 <div class="line">
-    <a><b>New Location — Somewhere in Bellevue :D</b>, See Service Times!</a>
+    <a><b>New Bellevue Location!!! — Service at 1:25pm, 2649 Landerholm Cir SE Bellevue, WA 98007</b></a>
 </div>
 <div class="header">
-    <span><a href="https://www.youtube.com/watch?v=b9h45DL2BQU">VISIT</a></span>
-    <span><a>I-TEAMS</a></span>
-    <span><a>EVENTS</a></span>
-    <span><img id="menulogo" src="media\logo_black.svg" alt="IRC Logo"/></span>
+
+
+
+
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
     
-    <span><a>SERMONS</a></span>
-    <span><a>PRAYER</a></span>
-    <span><a>GIVE</a></span>
+    <!--
+    Some spans to act as a hamburger.
     
-   
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
     
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="visit.html"><li>Visit</li></a>
+      <a href="iteams.html"><li>I-Teams</li></a>
+      <a href="eventsandblog.html"><li>Events</li></a>
+      <a href="sermons.html"><li>Sermons</li></a>
+      <a href="prayer.html"><li>Prayer</li></a>
+      <a href="give.html"><li>Give</li></a>
+      <br>
+      <div class="soclinks">
+        <a><i class="fa fa-instagram"></i>Instagram</a>
+        <a><i class="fa fa-youtube-play"></i>YouTube</a>
+       </div>
+       <div class="soclinks">
+        <a><i class="fa fa-facebook-f"></i>Facebook</a>
+        <a><i class="fa fa-telegram"></i>Telegram</a>
+       </div>
+    </ul>
+    
+  </div>
+
+
+    <span><a href="visit.html">VISIT</a></span>
+    <span><a href="iteams.html">I-TEAMS</a></span>
+    <span><a href="eventsandblog.html">EVENTS</a></span>
+    <span><a id="logo_icon" href="/"><img href="/" id="menulogo" src="media\logo_black.svg" alt="IRC Logo"/></a></span>
+    
+    <span><a href="sermons.html">SERMONS</a></span>
+    <span><a href="prayer.html">PRAYER</a></span>
+    <span><a href="give.html">GIVE</a></span>
+    
+
+
 </div>
 <div class="firstcont" style="position: relative; z-index: 0; width: 100%; height: 88vh; overflow: hidden;">
-    <div class="innerfirst">
-        <h1>Illnesses of Jesus</h1>
-        <h2>Latest Sermon</h2>
-        <span><a id="watchbut" href="https://www.youtube.com/watch?v=b9h45DL2BQU"><i class="fa fa-play" aria-hidden="true" style="margin-right: 10px;"></i>Watch Sermon</a><a>View More Sermons</a></span>
-    </div>
     
-    <iframe
+  <iframe
       frameborder="0"
       height="100%"
       width="100%"
-      src="https://youtube.com/embed/b9h45DL2BQU?autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=b9h45DL2BQU"
+      src="https://youtube.com/embed/q3ljS0-Bdzo?autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=q3ljS0-Bdzo"
     >
     </iframe>
+  
+  
+  <div class="innerfirst">
+        <h1>It's time for the next level</h1>
+        <h2>Latest Sermon</h2>
+        <span><a id="watchbut" href="https://www.youtube.com/watch?v=q3ljS0-Bdzo"><i class="fa fa-play" aria-hidden="true" style="margin-right: 10px;"></i>Watch Sermon</a><a href="sermons.html">View More Sermons</a></span>
+    </div>
+    
+    
   </div>
   
 <div class="secondcont">
@@ -60,15 +115,14 @@
  
     <div class="newhere">
   <h1>New here?</h1>
-  <a>Yes!</a>
+  <a href="join.html">Yes!</a>
  </div>
  
   
  
  <div class="campusone">
     <h2>IRC Bellevue</h2>
-    <p>5130 164th Ave SE
-      Bellevue, WA 98006</p>
+    <p>2649 Landerholm Cir SE Bellevue, WA 98007</p>
       <span>
       <h3>1:25 pm</h3>
       <a>Learn More...</a>
@@ -216,27 +270,28 @@
   <div class="givebox">
     <h1>Prayer Request</h1>
     <h2>Are you struggling or need help? We’d love to pray for you. </h2>
-    <a>I Need Prayer<i class="fa fa-chevron-right"></i></a>
+    <a href="prayer.html">I Need Prayer<i class="fa fa-chevron-right"></i></a>
   </div>
   <div class="givebox">
     <h1>Join Our Church</h1>
     <h2>There’s room for you at IRC to experience real community and discover more about the Christian faith. </h2>
-    <a>Join<i class="fa fa-chevron-right"></i></a>
+    <a href="join.html">Join<i class="fa fa-chevron-right"></i></a>
   </div>
  
 </div>
 
 
 <div class="sevencont">
-  <div class="givebox">
+  <div class="givebox" style="background-color: var(--ircblack); color: var(--ircwhite)">
     <h1>Give</h1>
     <h2>See what God can do through your generosity!</h2>
-    <a>Give now  <i class="fa fa-chevron-right"></i></a>
+    <a href="give.html" style="background-color: var(--ircgreen); color: var(--ircblack)">Give now  <i class="fa fa-chevron-right"></i></a>
   </div>
 </div>
 
 
 <div class="footer">
+ 
   <img src="media\logo_white.svg" alt="IRC Logo"/>
   <p>Welcome to IRC Family!</p>
 

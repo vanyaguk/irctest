@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Request A Prayer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style\style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="media/favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<script src="js/script.js" defer></script>
+<script src="js\script.js" defer>
+    
+  const inputs = document.querySelectorAll(".input");
+  
+  function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+  }
+  
+  function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+      parent.classList.remove("focus");
+    }
+  }
+  
+  inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+  });
+  
+  </script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+
+    <div class="line">
+        <a><b>New Bellevue Location!!! — Service at 1:25pm, 2649 Landerholm Cir SE Bellevue, WA 98007</a>
+    </div>
+    <div class="header">
+
+ 
+
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="visit.html"><li>Visit</li></a>
+              <a href="iteams.html"><li>I-Teams</li></a>
+              <a href="eventsandblog.html"><li>Events</li></a>
+              <a href="sermons.html"><li>Sermons</li></a>
+              <a href="prayer.html"><li>Prayer</li></a>
+              <a href="give.html"><li>Give</li></a>
+            </ul>
+          </div>
+
+
+        <span><a href="visit.html">VISIT</a></span>
+    <span><a href="iteams.html">I-TEAMS</a></span>
+    <span><a href="eventsandblog.html">EVENTS</a></span>
+    <span><a id="logo_icon" href="/"><img href="/" id="menulogo" src="media\logo_black.svg" alt="IRC Logo"/></a></span>
+    
+    <span><a href="sermons.html">SERMONS</a></span>
+    <span><a href="prayer.html">PRAYER</a></span>
+    <span><a href="give.html">GIVE</a></span>
+        
+      
+    
+    
+
+
+
+        
+    </div>
+
+    <div class="contone" style="background-image: url(../media/431790704_400135532636516_5181875582392639704_n.jpg);">
+        <h1>How Can We Pray For You?</h1>
+
+    </div>
+   
+
+    <div class="prayercont">
+      <form action="index.html" autocomplete="off">
+        <h3 class="title">Prayer Request</h3>
+        <div class="input-container">
+          <input type="text" name="name" class="input" />
+          <label for="">Name</label>
+          <span>Name</span>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" class="input" />
+          <label for="">Email</label>
+          <span>Email</span>
+        </div>
+        <div class="input-container textarea">
+          <textarea name="message" class="input"></textarea>
+          <label for="">Briefly tell us how we can pray for you</label>
+          <span>Briefly tell us how we can pray for you</span>
+        </div>
+        <input type="submit" value="Send" class="btn" />
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+ 
+        <img src="media\logo_white.svg" alt="IRC Logo"/>
+        <p>Welcome to IRC Family!</p>
+      
+      <div class="links">
+      <a href="https://www.youtube.com/watch?v=b9h45DL2BQU">Visit</a>
+        <a>I-Teams</a>
+      </div>
+      <div class="links">
+        <a>Events</a>
+       <a>Give</a>
+      </div>
+      <div class="links">
+       <a>Become a Volunteer</a>
+       <a>IRC Kids</a>
+      </div>
+      <div class="links">
+        <a>IRC YTH</a>
+       </div>
+      <div class="soclinks">
+        <a><i class="fa fa-instagram"></i>Instagram</a>
+        <a><i class="fa fa-youtube-play"></i>YouTube</a>
+       </div>
+       <div class="soclinks">
+        <a><i class="fa fa-facebook-f"></i>Facebook</a>
+        <a><i class="fa fa-telegram"></i>Telegram</a>
+       </div>
+      </div>
+
+</body>
+<script src="js\script.js" defer>
+    
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+</script>
+</html>
