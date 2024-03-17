@@ -35,3 +35,36 @@ var swiper = new Swiper(".swiper-container", {
   
   });
  
+<script type="text/javascript"> 
+        function fakeClick(fn) {
+            var $a = $('<a href="#" id="fakeClick"></a>');
+                $a.bind("click", function(e) {
+                    e.preventDefault();
+                    fn();
+                });
+
+            $("body").append($a);
+
+            var evt, 
+                el = $("#fakeClick").get(0);
+
+            if (document.createEvent) {
+                evt = document.createEvent("MouseEvents");
+                if (evt.initMouseEvent) {
+                    evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                    el.dispatchEvent(evt);
+                }
+            }
+
+            $(el).remove();
+        }
+
+        $(function() {
+            var video = $("#someVideo").get(0);
+
+            fakeClick(function() {
+                video.play();
+            });
+        });
+
+        </script> 
