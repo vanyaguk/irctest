@@ -402,9 +402,7 @@ to {  -moz-transform:rotate(360deg);}
     cursor: default !important;
     
 }
-            .swiper-slide  {
-            
-            }
+    
  .swiper-pagination, .swiper-button-next, .swiper-button-prev {
      position: unset !important;
  }
@@ -430,7 +428,7 @@ to {  -moz-transform:rotate(360deg);}
     color: var(--ircgreen);
     transition: 0.5s;
     padding: 25px;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 .card h3 {
     font-weight: 300;
@@ -449,9 +447,8 @@ to {  -moz-transform:rotate(360deg);}
 }
 .card img {
     position: relative;
-    width: max-content;
-    height: 150%;
-    bottom: -50%;
+    height: 600px;
+    bottom: -150px;
     opacity: 0.8;
     align-self: center;
 }
@@ -662,6 +659,8 @@ to {  -moz-transform:rotate(360deg);}
 }
 .givebox h1 {
     font-size: 500%;
+    line-height: 0.8;
+    margin-bottom: 10px;
  }
  .givebox h2 {
      font-weight: 500;
@@ -1300,6 +1299,7 @@ form {
     }
     .firstcont {
         position: relative;
+        z-index: -1 !important;
     }
     .firstcont::before {
         content: "";
